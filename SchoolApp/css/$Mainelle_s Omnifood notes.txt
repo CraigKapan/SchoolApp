@@ -1,0 +1,610 @@
+/*Omnifood--project ------------*/
+
+
+Notes:..:.n.:.o.:.t.:.e.:.s.:
+
+video-1{
+
+Title:
+
+Section: WEB DESIGN BASICS
+
+}
+
+
+
+
+
+video-2{
+
+Title: don't be a good student, be an amazing student
+
+Section: WEB DESIGN BASICS
+
+take quizzes and challenges
+
+DON'T GIVE UP!!!!!
+YOU WILL BE AN AMAZING STUDENT, NOT A GOOD STUDENT
+
+}
+
+
+
+
+video-3{
+
+Title: introduction to web design
+
+Section: WEB DESIGN BASICS
+
+the DESIGNER creates the look and feel
+
+the DEVELOPER builds it
+
+/*the front end developer uses languages such as html, css and javascript
+
+for the front end which is the visible part of a website*/
+
+/*  the lines between designers and developers are becoming more blured
+
+    as learning to code is becoming easier for designers and designing
+   
+    is coming easier for developers
+   
+
+ */
+}
+
+
+
+video-4{
+
+Title: beautiful typography
+
+Section: WEB DESIGN BASICS
+
+"Typography is the art and technique of arranging type to make
+
+written language readable and beautiful.
+
+
+1. USE A FONT-SIZE BETWEEN 15 AND 25 PIXELS FOR BODY TEXTS 
+
+
+ ( 14PX AND 30PX ARE BAD )
+
+-------------------------------------------------------------------------
+
+2. USE (REALLY) BIG FONT SIZES FOR HEADLINES 
+
+
+60PX AND MINIMUM 32PX SOME
+
+CAN HAVE EXTREMELY BIG HEADLINES 90PX
+-------------------------------------------------------------------------
+
+3. USE LINE SPACING BETWEEN 120 AND 150% 
+
+LINE SPACING IS THE VERTICAL DISTANCE
+
+BETWEEN LINES AND MAKE TEXT EASIER TO READ  ( 100% AND 200% ARE BAD )
+-----------------------------------------------------------------
+
+4. 45 TO 90 CHARACTERS PER LINE 
+
+
+78 CHARS IS A VERY GOOD QUALITY
+
+( 36 AND 141 CHARACTERS ARE BAD )
+
+-----------------------------------------------------------------
+
+5. USE GOOD FONTS
+
+
+SANS-SERIF                     SERIF
+                              
+.MORE NEUTRAL                  .Traditional purposes
+
+.CLEAN                         .Storytelling
+
+.SIMPLE                        .Long reading
+
+.MODERN WEBSITES    
+
+
+5. HOW TO CHOOSE A FONT?
+
+1. Choose a font which reflects the look and feel you want for your website 
+
+2. Decide: sans-serif or serif typeface
+
+3. Use a good font
+
+4. Use only that one typeface        
+
+} 
+
+
+
+video-5{
+
+Title: Using colors like a pro
+
+Section: WEB DESIGN BASICS
+
+
+
+1. Use only one base color and the base color any other besides black white
+
+arson shade of gray
+
+
+2. Use a tool if you want to use more colors //adobe cc color
+
+
+3. Use color to draw attention
+
+
+4. Never use black in your design
+
+
+5. Choose colors wisely
+
+
+RED---> to use when power, passion, strength and excitement // brighter tones
+
+are more energetic and darker shades are more powerful and elegent
+
+
+ORANGE---> draws attention without being as over powered as red it means
+
+cheerfulness and creative orange can be asossiated with friendlyness, confidense
+
+and courage
+
+
+YELLOW---> yellow is energetic and gives the feeling of happiness liveliness
+
+also it asossiates with curiosity, intelligents, brightness 
+
+
+GREEN---> green is the color of harmony, nature, life and healthy also it is
+
+often asossiated with money  in design green can have a balancing and harmonized
+
+
+BLUE---> blue means patients, peace, trustworthy  it is one of the most beloved
+
+colors especially by men it is asossiated with trust and honour
+
+
+PURPLE---> is traditionaly asossiated with power and ability and wealth in a 
+
+design purple can give a sign of wisdom, royalty and ability, luxuary and
+
+mystery
+
+
+PINK---> expresses romans, care, peace efection and 
+
+
+BROWN---> is the color of relaxation and confidents brown it's self means
+earthiness
+
+nature, duribility, comfort and reliability
+
+}
+
+
+
+video-6{
+
+Title: Working with images
+
+Section: WEB DESIGN BASICS
+
+
+big and beautiful images are every where in webdesigns // using large 
+
+background
+
+images can make your website look more attractive and create more user 
+
+engagements
+
+
+imagery websites convert better and must know how to put text over images
+
+
+1. put text directly on the image
+
+2. overlay the image
+
+3. put your text in a box
+
+4. blur the image
+
+5. the floor fade
+
+
+}
+
+
+
+video-7{
+
+Title: Working with icons
+
+Section: WEB DESIGN BASICS
+
+
+icons can be a very important part of a web-designers work icons improve the
+
+estethic of a website and can provide better user experience if well used it is
+
+pretty incredible how much power icons have in determining the look and feel
+
+of an entire website but icons can also cause user confusion when poorly used
+
+this is where there are some very simple basic guide lines you should follow
+
+
+1. Use icons to list feature/steps
+
+2. Use icons for actions and links //RULE 1 == icons should be recognizibable
+
+RULE 2 == label your icons
+
+3. icons should not take a center stage
+
+4. Use icon fonts whenever possible
+
+ 
+video-8{
+
+Title: Spacing and layout
+
+Section: WEB DESIGN BASICS
+
+
+what is whitespce // white space is just space where there isn't any stuff
+
+white space absolutely is the key to a clean and simple look and feel
+
+
+1. Use whitespace
+==========================
+
+.Put whitespace between your elements
+
+.Put whitespace between your groups of elements
+
+.Put whitespace between your website's sections
+
+. But don't exaggerate
+
+
+2. Define hierarchy
+==============================
+
+Whitespace describes invisible relationship between the elements of
+
+your websites
+
+// hierarchy gives your website order
+
+
+. Define where you want your audience to look first
+
+. Establish a flow that corresponds to your content's message
+
+. Use whitespace to build that flow
+
+}
+
+
+
+video-9{
+
+Title: Introduction to user experience
+
+Section: WEB DESIGN BASICS
+
+
+USER INTERFACE is the presentation of a product, how it looks and feels
+
+USER EXPERIENCE is the overall experience the user has with a product
+
+" It's not just what it looks like and feels like. Design is how it works.
+
+USER EXPERIENCE
+
+//user's goals
+
+// business' goals
+
+}
+
+
+
+
+video-10{
+
+Title: Getting inspired the secret ingredient for stunning web design
+
+Section: WEB DESIGN BASICS
+
+
+Use other websites as inspiration to see what other leading designers are
+
+DOING RIGHT
+
+. Collect designs that you like
+
+. Try to understand everything about them
+
+. Why do they look good?
+
+. What do these sites have in common
+
+. How were they built in html and css?
+
+
+STEAL like an artist
+}
+
+
+
+
+video-11{
+
+Title: Our main tool: Brackets text editor
+
+Section: Dive into html
+
+
+
+
+}
+
+
+
+
+video-12{
+
+Title: What is html
+
+Section: Dive into html
+
+
+. Hyper Text Markup Language
+
+
+. html documents are described by html tags
+
+  <h1>   <p>    <a>
+
+. tags mark up the beginning and the end of an element
+
+  <tagname>content</tagname>
+
+
+}
+
+
+
+
+video-13{
+
+Title: The structure of an html document
+
+Section: Dive into html
+
+
+
+
+}
+
+
+
+
+video-14{
+
+Title:
+
+Section: Dive into html
+
+}
+
+
+
+
+video-15{
+
+Title:
+
+Section: Dive into html
+
+}
+
+
+
+
+video-16{
+
+Title:
+
+Section: Dive into html
+
+}
+
+
+
+video-17{
+
+Title:
+
+Section:
+
+}
+
+
+
+
+video-18{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-19{
+
+Title:
+
+Section:
+
+}
+
+
+
+
+video-20{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-21{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-22{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-23{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-24{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-25{
+
+Title:
+
+Section:
+
+}
+
+
+
+video-26{
+
+Title: The 7real-world stepsto a fully functional website
+
+Section: The killer website project
+
+
+1. DEFINE YOUR PROJECT
+
+. Define the goal of your project
+
+. Define your audience
+
+. Design with your goal and audience in mind
+
+
+2. PLAN OUT EVERYTHING
+
+. Plan your : text, images, videos, icons, etc.
+
+. Start thinking about visual hierarchy
+
+. Define the navigation 
+
+. DEfine the site structure if it's a bigger project
+
+
+3. SKETCH YOUR IDEAS BEFORE YOU DESIGN
+
+. Get inspired and think about your design
+
+. Get the ideas out of your head: sketch your ideas before start designing
+
+. Make as many sketches as you want, but don't make it perfect
+
+. Never start designing with without having an idea of what you want to build
+
+
+4. DESIGN AND DEVELOP YOUR WEBSITE
+
+. Design your website using guidelines and tips you've learned in the webdesign
+
+section
+
+. Do that using HTML and CSS: designing in the browser
+
+. Use sketches, content and planning decisions you've made in steps 1,2 and 3
+
+. This step is the biggest part of building a website, but: all steps are
+
+important
+
+
+5. IT'S NOT DONE YET: OPTIMIZATION
+
+. Optimize performance: site speed
+
+. Search engine optimisation (SEO)
+
+
+6. LAUNCH THE MASTERPIECE
+
+
+. All you need for launching is a webserver that will host your website and 
+
+deliver it to the world
+
+7. SITE MAINTENANCE
+
+. Launching is not the end of the story
+
+. Monitor your users behavior and change your website if necessary
+
+. Update your content regularly:blog 
+}

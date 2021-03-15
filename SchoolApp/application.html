@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/lib/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/lib/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>schoolapp</title>
+  </head>
+  <body>
+    <div class="header clearfix">
+      <!--Logo-->
+      <div class="logo">
+        logo
+      </div>
+
+      <!--Nav-->
+      <nav class="nav">
+        <ul class="baby-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="application.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+    </div>
+
+    <!--Banner-->
+    <div class="banner">
+      <div class="headline__container">
+        <h1 class="banner__heading">Application Form</h1>
+        <p class="banner__para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          autem dignissimos.
+        </p>
+      </div>
+    </div>
+
+    <div class="container clearfix">
+        
+      <!-- AppForm -->
+      <div class="form__box">
+        <form class="appform" action="app.py" method="POST">
+          <fieldset>
+            <legend>Application Form</legend>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Name" required="1">
+
+            <label for="Surname">Surname</label>
+            <input type="text" id="Surname" name="Surname" placeholder="Surname" required="1">
+
+            <label for="Tel">Tel</label>
+            <input type="tel" id="Tel" name="Tel" placeholder="Tel" required="1">
+
+            <label for="Parent-Tel">Parent/Guardian Tel</label>
+            <input type="tel" id="Parent-Tel" name="Parent-Tel"placeholder="Parent/Guardian Tel" required="1">
+
+            <label for="Address">Address</label>
+
+            <textarea name="address" id="address" cols="30" rows="5"></textarea required="1">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required="1">
+
+            <label for="Image">Image</label>
+            <input type="file" id="fname" name="Image" placeholder="Image" pattern="">
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="requirement__box">
+        <h2 class="requirement__heading">Application requirement</h2>
+        <p class="requirement__para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+
+        <h3 class="requirement__heading__small">What you need</h3>
+        <ul class="requirement__list">
+          <li class="requirement__list__item">Report of last year</li>
+          <li class="requirement__list__item">Image</li>
+          <li class="requirement__list__item">Birth certificate</li>
+          <li class="requirement__list__item">Id number</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer clearfix">
+      <ul class="social__media">
+        <li class="social__media-item"><i class="flaticon-facebook"></i></li>
+        <li class="social__media-item"><i class="flaticon-twitter"></i></li>
+        <li class="social__media-item"><i class="flaticon-linkedin"></i></li>
+        <li class="social__media-item"><i class="flaticon-instagram"></i></li>
+      </ul>
+      <p class="footer__para">&copy;craigkapan.com</p>
+    </footer>
+  </body>
+</html>
