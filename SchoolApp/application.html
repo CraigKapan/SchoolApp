@@ -40,7 +40,7 @@
         
       <!-- AppForm -->
       <div class="form__box">
-        <form class="appform" action="app.py">
+        <form enctype="multipart/form-data" class="appform" action="{{ url_for('add') }}" method="POST">
           <fieldset>
             <legend>Application Form</legend>
             <label for="Name">Name</label>
@@ -57,10 +57,10 @@
 
             <label for="Address">Address</label>
 
-            <textarea name="address" id="address" cols="30" rows="5"></textarea required="1">
+            <textarea name="Address" id="address" cols="30" rows="5"></textarea required="1">
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" required="1">
+            <input type="email" id="email" name="Email" placeholder="Email" required="1">
 
             <label for="Image">Image</label>
             <input type="file" id="fname" name="Image" placeholder="Image" pattern="">
