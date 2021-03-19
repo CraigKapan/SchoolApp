@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}" rel="stylesheet">
+    <title>schoolapp</title>
+  </head>
+  <body>
+    <div class="header clearfix">
+      <!--Logo-->
+      <div class="logo">
+        logo
+      </div>
+
+      <!--Nav-->
+      <nav class="nav">
+        <ul class="baby-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="application.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+    </div>
+
+    <!--Banner-->
+    <div class="banner">
+      <div class="headline__container">
+        <h1 class="banner__heading">Application Form</h1>
+        <p class="banner__para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          autem dignissimos.
+        </p>
+      </div>
+    </div>
+
+    <div class="container clearfix">
+        
+      <!-- AppForm -->
+      <div class="form__box">
+        <form class="appform" action="" method="POST">
+          <!-- {{url_for('apply')}} -->
+          <fieldset>
+            <legend>Application Form</legend>
+            <p>
+              {{form.Name.label}}
+              {{form.Name(size=30)}}
+            </p>
+            <p>
+              {{form.Surname.label}}
+              {{form.Surname(size=30)}}
+            </p>
+            <p>
+              {{form.Tel.label}}
+              {{form.Tel(size=30)}}
+            </p>
+            <p>
+              {{form.ParentTel.label}}
+              {{form.ParentTel(size=30)}}
+            </p>
+            <p>
+              {{form.Address.label}}
+              {{form.Address(size=100)}}
+            </p>
+            <p>
+              {{form.Email.label}}
+              {{form.Email(size=30)}}
+            </p>
+            <p>
+              {{form.Submit()}}
+            </p>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="requirement__box">
+        <h2 class="requirement__heading">Application requirement</h2>
+        <p class="requirement__para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+
+        <h3 class="requirement__heading__small">What you need</h3>
+        <ul class="requirement__list">
+          <li class="requirement__list__item">Report of last year</li>
+          <li class="requirement__list__item">Image</li>
+          <li class="requirement__list__item">Birth certificate</li>
+          <li class="requirement__list__item">Id number</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer clearfix">
+      <ul class="social__media">
+        <li class="social__media-item"><i class="flaticon-facebook"></i></li>
+        <li class="social__media-item"><i class="flaticon-twitter"></i></li>
+        <li class="social__media-item"><i class="flaticon-linkedin"></i></li>
+        <li class="social__media-item"><i class="flaticon-instagram"></i></li>
+      </ul>
+      <p class="footer__para">&copy;craigkapan.com</p>
+    </footer>
+  </body>
+</html>
