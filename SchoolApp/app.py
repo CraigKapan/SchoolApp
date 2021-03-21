@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, url_for
 from forms import AppForm
+from forms import ContactForm
 import mysql.connector
 
 app = Flask(__name__)
@@ -13,13 +14,21 @@ mydb = mysql.connector.connect(
     database="schoolappdb"
 )
 mycursor = mydb.cursor()
-@app.route('/')
-def Index():
+@app.route('/index')
+def index():
     return render_template('index.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    cform = ContactForm()
+    if cform.is_submitted():
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        mycursor.execute("INSERT INTO contact_table (name, email, message) VALUES (%s, %s, %s)", (name, email, message))
+        mydb.commit()
+        return redirect(url_for('index'))
+    return render_template('contact.html', form=cform)
 
 @app.route('/apply', methods=['GET', 'POST'])
 def apply():
@@ -33,7 +42,7 @@ def apply():
         Email = request.form['Email']
         mycursor.execute("INSERT INTO schoolapptb (Name, Surname, Tel, ParentTel, Address, Email) VALUES (%s, %s, %s, %s, %s, %s)", (Name, Surname, Tel, ParentTel, Address, Email))
         mydb.commit()
-        return redirect(url_for('apply'))
+        return redirect(url_for('index'))
     return render_template('application.html', form=form)
 
 if __name__ == '__main__':

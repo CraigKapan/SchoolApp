@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="/css/lib/flaticon/flaticon.css">
-    <link rel="stylesheet" href="css/lib/normalize.css" />
-    <link rel="stylesheet" href="css/css.css" /> -->
-    <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}" rel="stylesheet">
-    <title>schoolapp</title>
-  </head>
-  <body>
-    <div class="header clearfix">
-      <!--Logo-->
-      <div class="logo">
-        logo
-      </div>
-      <!--nav-->
-      <nav class="nav">
-        <ul class="baby-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="application.html">Apply</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+{% extends "base.html" %}
+
+{% block content %}
     <!--Banner-->
     <div class="banner">
       <div class="headline__container">
@@ -74,16 +51,4 @@
         </p>
       </div>
     </div>
-    <!--Footer-->
-    <footer class="footer clearfix">
-      <ul class="social__media">
-        <li class="social__media-item"><i class="flaticon-facebook"></i></li>
-        <li class="social__media-item"><i class="flaticon-twitter"></i></li>
-        <li class="social__media-item"><i class="flaticon-linkedin"></i></li>
-        <li class="social__media-item"><i class="flaticon-instagram"></i></li>
-      </ul>
-      <p class="footer__para">&copy;craigkapan.com</p>
-    </footer>
-    
-  </body>
-</html>
+{% endblock %}

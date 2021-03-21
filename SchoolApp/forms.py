@@ -9,3 +9,9 @@ class AppForm(FlaskForm):
     Address = StringField('Address')
     Email = StringField('Email')
     Submit = SubmitField('Submit')
+
+class ContactForm(FlaskForm):
+    name = StringField('name')
+    email = StringField('email')
+    message = StringField('message')
+    submit = SubmitField('submit')

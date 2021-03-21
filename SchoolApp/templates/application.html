@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}" rel="stylesheet">
-    <title>schoolapp</title>
-  </head>
-  <body>
-    <div class="header clearfix">
-      <!--Logo-->
-      <div class="logo">
-        logo
-      </div>
+{% extends "base.html" %}
 
-      <!--Nav-->
-      <nav class="nav">
-        <ul class="baby-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="application.html">Apply</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-       </nav>
-    </div>
-
+{% block content %}
     <!--Banner-->
     <div class="banner">
       <div class="headline__container">
@@ -43,28 +21,31 @@
           <fieldset>
             <legend>Application Form</legend>
             <p>
-              {{form.Name.label}}
-              {{form.Name(size=30)}}
+              <!-- {{form.Name.label}} 
+              {{form.Name(size=30)}} -->
+              <label for="Name" class="Name">Name</label>
+              <input type="text" name="Name" id="Name" required="1" maxlength="30" minlength="2">
             </p>
             <p>
-              {{form.Surname.label}}
-              {{form.Surname(size=30)}}
+              <label for="Surname" class="Surname">Surname</label>
+              <input type="text" name="Surname" id="Surname" required maxlength="30" minlength="2">
             </p>
             <p>
-              {{form.Tel.label}}
-              {{form.Tel(size=30)}}
+              <label for="Tel" class="Tel">Tel</label>
+              <input type="tel" name="Tel" id="Tel" required maxlength="10" minlength="10">
             </p>
             <p>
-              {{form.ParentTel.label}}
-              {{form.ParentTel(size=30)}}
+              <label for="ParentTel" class="ParentTel">Tel</label>
+              <input type="tel" name="ParentTel" id="ParentTel" required maxlength="10" minlength="10">
             </p>
             <p>
-              {{form.Address.label}}
-              {{form.Address(size=100)}}
+              <label for="Address" class="Address">Address</label>
+              <textarea name="Address" id="Address" cols="30" rows="10" required maxlength="50" minlength="5"></textarea>
+              
             </p>
             <p>
-              {{form.Email.label}}
-              {{form.Email(size=30)}}
+              <label for="Email" class="Email">Email</label>
+              <input type="email" name="Email" id="Email" required maxlength="30" minlength="7">
             </p>
             <p>
               {{form.Submit()}}
@@ -88,16 +69,4 @@
         </ul>
       </div>
     </div>
-
-    <!--Footer-->
-    <footer class="footer clearfix">
-      <ul class="social__media">
-        <li class="social__media-item"><i class="flaticon-facebook"></i></li>
-        <li class="social__media-item"><i class="flaticon-twitter"></i></li>
-        <li class="social__media-item"><i class="flaticon-linkedin"></i></li>
-        <li class="social__media-item"><i class="flaticon-instagram"></i></li>
-      </ul>
-      <p class="footer__para">&copy;craigkapan.com</p>
-    </footer>
-  </body>
-</html>
+{% endblock %}
