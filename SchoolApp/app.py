@@ -42,8 +42,14 @@ def apply():
         Email = request.form['Email']
         mycursor.execute("INSERT INTO schoolapptb (Name, Surname, Tel, ParentTel, Address, Email) VALUES (%s, %s, %s, %s, %s, %s)", (Name, Surname, Tel, ParentTel, Address, Email))
         mydb.commit()
-        return redirect(url_for('index'))
+        return redirect(url_for('admin'))
     return render_template('application.html', form=form)
+
+@app.route('/admin')
+def admin():
+    mycursor.execute("SELECT * FROM schoolapptb")
+    data = mycursor.fetchall()
+    return render_template('admin.html', schoolapptb = data)
 
 if __name__ == '__main__':
     app.debug = True
