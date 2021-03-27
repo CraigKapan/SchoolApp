@@ -15,3 +15,7 @@ class ContactForm(FlaskForm):
     email = StringField('email')
     message = StringField('message')
     submit = SubmitField('submit')
+
+class Adminform(FlaskForm):
+    email = StringField('email')
+    password = PasswordField('password')

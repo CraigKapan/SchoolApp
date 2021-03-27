@@ -21,6 +21,13 @@ body {
 }
 
 
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* ==================================
 Clearfix
 ======================================= */
@@ -89,7 +96,7 @@ li a
 }
 
 /* ==================================
-Appform
+Appform / Adminform
 ======================================= */
 
 .form__box {
@@ -97,7 +104,7 @@ Appform
   float: left;
 }
 
-.appform {
+.appform, .adminform, .loginform {
   width: 400px;
   padding: 40px;
   background-color: lightblue;
@@ -111,7 +118,12 @@ Appform
 .appform input[type="tel"],
 .appform input[type="file"],
 .appform input[type="email"],
-.appform select {
+.appform select,
+.adminform input[type="email"],
+.adminform input[type="password"],
+.registerform input[type="text"],
+.registerform input[type="password"]
+.registerform input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -129,9 +141,10 @@ input[type="reset"] {
   margin: 6px;
 }
 
+
 /* Fieldset and Legend */
 
- .appform fieldset {
+ .appform fieldset, .adminform fieldset, .loginform fieldset {
   border: 1px solid blue;
   border-radius: 5px;
   padding: 20px;
@@ -222,110 +235,40 @@ Banner
 Sidebar
 ======================================= */
 
-/* .sidebar-toggle {
-  position: fixed;
-  top: 2rem;
-  right: 3rem;
-  font-size: 2rem;
-  background: transparent;
-  border-color: transparent;
-  color: #49a6e9;
-  transition: all 0.3s linear;
-  cursor: pointer;
-  animation: bounce 2s ease-in-out infinite;
-}
-.sidebar-toggle:hover {
-  color: #8bcbf9;
-}
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-}
-.close-btn {
-  font-size: 1.75rem;
-  background: transparent;
-  border-color: transparent;
-  color: #49a6e9;
-  transition: all 0.3s linear;
-  cursor: pointer;
-  color: #bb2525;
-}
-.close-btn:hover {
-  color: #e66b6b;
-  transform: rotate(360deg);
-}
-.logo {
-  justify-self: center;
-  height: 40px;
-}
-
-.links a {
-  display: block;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  padding: 1rem 1.5rem;
-  color: #617d98;
-  transition: all 0.3s linear;
-}
-.links a:hover {
-  background: #a5d5f8;
-  color: #49a6e9;
-  padding-left: 1.75rem;
-}
-
 .sidebar {
+  height: 100%;
+  width: 160px;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 1rem;
-  box-shadow: #bb2525;
-  transition: all 0.3s linear;
-  transform: translate(-100%);
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
 }
-.show-sidebar {
-  transform: translate(0);
-}  */
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
 
 
 /* ==================================
 Table
 ======================================= */
-.filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1; 
-  opacity: .7;
-  background: rgb(0,0,255);
-  background: linear-gradient(90deg, rgba(0,0,255,1) 25%, rgba(82,187,223,1) 50%, rgba(144,202,249,1) 75%);
-}
+
 
 table {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 60%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -381,6 +324,7 @@ Container
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 16px;
 }
 
 .content_center {

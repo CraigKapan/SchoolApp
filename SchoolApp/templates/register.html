@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}">
+    <title>Register</title>
+</head>
+<body>
+
+<!-- RegisterForm -->
+<div class="form__box">
+    <form class="registerform" method="POST" action="{{url_for('index')}}" autocomplete="off">
+      <fieldset>
+        <legend>Registerform</legend>
+        <p>
+            <label for="Name" class="Name">Name</label>
+            <input type="text" name="Name" required="1">
+        </p>
+        <p>
+          <label for="Email" class="Email">Email</label>
+          <input type="email" name="Email" required="1">
+        </p>
+        <p>
+          <label for="Password" class="Password">Password</label>
+          <input type="password" name="Password" required="1">
+        </p>
+        <p>
+          <input type="submit" value="Register">
+        </p>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>

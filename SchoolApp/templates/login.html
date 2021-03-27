@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}">
+    <title>Login</title>
+</head>
+<body>
+
+      <!-- Adminform -->
+      <div class="form__box">
+        <form class="adminform" method="POST" action="{{url_for('validate')}}" autocomplete="off">
+          <fieldset>
+            <legend>AdminForm</legend>
+            <p>
+              <label for="Email" class="Email">Email</label>
+              <input type="email" name="Email" required="1">
+            </p>
+            <p>
+              <label for="Password" class="Password">Password</label>
+              <input type="password" name="Password" required="1">
+            </p>
+            <p>
+              <input type="submit" value="Submit">
+              <p>don't have a account <a href="{{url_for('apply')}}">register</a></p>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
+
+

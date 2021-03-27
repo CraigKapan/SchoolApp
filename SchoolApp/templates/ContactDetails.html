@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/css.css')}}" rel="stylesheet">
-    <title>schoolapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>ContactDetails</title>
   </head>
   <body>
 
@@ -26,7 +27,44 @@
        </nav>
     </div>
 
-    {% block content %}{% endblock %}
+    <div class="sidebar">
+      <a href="/ContactDetails">Contact Details</a>
+      <a href="/ApplicationDetails">Application Details</a>
+    </div>
+
+<!--Banner-->
+<div class="banner">
+  <div class="headline__container">
+    <h1 class="banner__heading">Admin Table</h1>
+    <p class="banner__para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+      autem dignissimos.
+    </p>
+  </div>
+</div>
+
+
+
+  <div class="container">
+    <table>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+      </tr>
+
+      {% for row in contact_table %}
+      <tr>
+          <td>{{row.0}}</td>
+          <td>{{row.1}}</td>
+          <td>{{row.2}}</td>
+          <td>{{row.3}}</td>
+          <td>{{row.4}}</td>
+      </tr>
+      {% endfor %}
+  </table>
+  </div>
 
     <!--Footer-->
     <footer class="footer clearfix">
@@ -39,4 +77,5 @@
       <p class="footer__para">&copy;craigkapan.com</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>

@@ -16,13 +16,11 @@
         
       <!-- AppForm -->
       <div class="form__box">
-        <form class="appform" action="" method="POST">
+        <form class="appform" method="POST" autocomplete="off">
           <!-- {{url_for('apply')}} -->
           <fieldset>
             <legend>Application Form</legend>
             <p>
-              <!-- {{form.Name.label}} 
-              {{form.Name(size=30)}} -->
               <label for="Name" class="Name">Name</label>
               <input type="text" name="Name" id="Name" required="1" maxlength="30" minlength="2">
             </p>
@@ -48,7 +46,7 @@
               <input type="email" name="Email" id="Email" required maxlength="30" minlength="7">
             </p>
             <p>
-              {{form.Submit()}}
+              <input type="submit" value="Submit">
             </p>
           </fieldset>
         </form>

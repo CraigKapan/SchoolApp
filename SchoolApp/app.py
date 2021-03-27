@@ -1,9 +1,18 @@
-from flask import Flask, render_template, redirect, request, url_for
-from forms import AppForm
-from forms import ContactForm
+import tkinter
+from tkinter import messagebox
+
 import mysql.connector
+import win32api
+from flask import Flask, redirect, render_template, request, url_for
+
+from forms import Adminform, AppForm, ContactForm
+
+root = tkinter.Tk()
+root.withdraw()
+
 
 app = Flask(__name__)
+
 
 app.config['SECRET_KEY'] = '12345'
 
@@ -14,7 +23,7 @@ mydb = mysql.connector.connect(
     database="schoolappdb"
 )
 mycursor = mydb.cursor()
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
@@ -42,15 +51,74 @@ def apply():
         Email = request.form['Email']
         mycursor.execute("INSERT INTO schoolapptb (Name, Surname, Tel, ParentTel, Address, Email) VALUES (%s, %s, %s, %s, %s, %s)", (Name, Surname, Tel, ParentTel, Address, Email))
         mydb.commit()
-        return redirect(url_for('admin'))
+        return redirect(url_for('index'))
     return render_template('application.html', form=form)
 
-@app.route('/admin')
+@app.route('/admin', methods=['GET', 'POST'])
 def admin():
+    return render_template('admin.html')
+
+@app.route('/validate', methods=['GET', 'POST'])
+def validate():
+    aform = Adminform()
+    Email = request.form['Email']
+    Password = request.form['Password']
+    if len(Password) < 7:
+        win32api.MessageBox(0, 'Password input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+    if len(Password) > 7:
+        win32api.MessageBox(0, 'Password input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+    if len(Password) == 7 and Password == '$@Admin': 
+        return redirect(url_for('admin'))
+
+    if len(Password) == 7 and Password != '$@Admin':
+        win32api.MessageBox(0, 'Password input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+
+
+
+    if len(Email) < 15:
+        win32api.MessageBox(0, 'Email input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+    if len(Email) > 15:
+        win32api.MessageBox(0, 'Email input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+    if len(Email) == 15 and Email == 'Admin@gmail.com': 
+        return redirect(url_for('admin'))
+
+    if len(Email) == 15 and Email != 'Admin@gmail.com':
+        win32api.MessageBox(0, 'Email input is wrong', 'Error')
+        return redirect(url_for('index'))
+
+    return render_template('application.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+    
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    return render_template('register.html')
+
+@app.route('/ApplicationDetails', methods=['GET', 'POST'])
+def ApplicationDetails():
     mycursor.execute("SELECT * FROM schoolapptb")
     data = mycursor.fetchall()
-    return render_template('admin.html', schoolapptb = data)
+    return render_template('ApplicationDetails.html', schoolapptb = data)
+
+@app.route('/ContactDetails', methods=['GET', 'POST'])
+def ContactDetails():
+    mycursor.execute("SELECT * FROM contact_table")
+    data = mycursor.fetchall()
+    return render_template('ContactDetails.html', contact_table = data)
+
 
 if __name__ == '__main__':
-    app.debug = True
+    app.debug(True)
     app.run()
