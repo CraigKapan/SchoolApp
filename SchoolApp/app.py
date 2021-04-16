@@ -56,7 +56,9 @@ def apply():
 
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
-    return render_template('admin.html')
+    mycursor.execute("SELECT * FROM contact_table, schoolapptb")
+    data = mycursor.fetchall()
+    return render_template('admin.html', contact_table = data, schoolapptb = data)
 
 @app.route('/validate', methods=['GET', 'POST'])
 def validate():
@@ -106,19 +108,6 @@ def login():
 def register():
     return render_template('register.html')
 
-@app.route('/ApplicationDetails', methods=['GET', 'POST'])
-def ApplicationDetails():
-    mycursor.execute("SELECT * FROM schoolapptb")
-    data = mycursor.fetchall()
-    return render_template('ApplicationDetails.html', schoolapptb = data)
-
-@app.route('/ContactDetails', methods=['GET', 'POST'])
-def ContactDetails():
-    mycursor.execute("SELECT * FROM contact_table")
-    data = mycursor.fetchall()
-    return render_template('ContactDetails.html', contact_table = data)
-
 
 if __name__ == '__main__':
-    app.debug(True)
     app.run()

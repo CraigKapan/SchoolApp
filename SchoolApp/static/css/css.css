@@ -231,35 +231,7 @@ Banner
 .banner__link:hover {
   opacity: 0.8;
 }
-/* ==================================
-Sidebar
-======================================= */
 
-.sidebar {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px;
-}
-
-/* Style sidebar links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-
-/* Style links on mouse-over */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
 
 
 
@@ -297,6 +269,16 @@ td {
 tr:nth-child(odd) {
   background-color: #eeeeee;
 }
+
+.table__holder {
+  width: 65%;
+  background-color: pink;
+}
+
+.aside {
+  width: 30%;
+  background-color: black;
+} 
 
 /* ==================================
 Middle Section
