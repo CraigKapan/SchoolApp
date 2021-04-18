@@ -49,10 +49,13 @@ def apply():
         ParentTel = request.form['ParentTel']
         Address = request.form['Address']
         Email = request.form['Email']
-        mycursor.execute("INSERT INTO schoolapptb (Name, Surname, Tel, ParentTel, Address, Email) VALUES (%s, %s, %s, %s, %s, %s)", (Name, Surname, Tel, ParentTel, Address, Email))
+        Image = request.form['Image']
+        Birth_Certificate = request.form['Birth_Certificate']
+        Id_Number = request.form['Id_Number']
+        mycursor.execute("INSERT INTO schoolapptb (Name, Surname, Tel, ParentTel, Address, Email, Image, Birth_Certificate, Id_Number) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", (Name, Surname, Tel, ParentTel, Address, Email, Image, Birth_Certificate, Id_Number))
         mydb.commit()
         return redirect(url_for('index'))
-    return render_template('application.html', form=form)
+    return render_template('application.html', form = form)
 
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():

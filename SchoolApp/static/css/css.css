@@ -118,6 +118,7 @@ Appform / Adminform
 .appform input[type="tel"],
 .appform input[type="file"],
 .appform input[type="email"],
+.appform input[type="file"],
 .appform select,
 .adminform input[type="email"],
 .adminform input[type="password"],
@@ -272,13 +273,8 @@ tr:nth-child(odd) {
 
 .table__holder {
   width: 65%;
-  background-color: pink;
 }
 
-.aside {
-  width: 30%;
-  background-color: black;
-} 
 
 /* ==================================
 Middle Section

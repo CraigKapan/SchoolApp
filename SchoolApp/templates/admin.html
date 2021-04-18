@@ -39,10 +39,6 @@
     </div>
   </div>
 <div class="container">
-  <aside class="aside">
-    <a href="#">Contact Details</a>
-    <a href="#">Application Details</a>
-  </aside>
   <div class="table__holder">
     <table>
       <tr>
@@ -53,6 +49,9 @@
           <th>ParentTel</th>
           <th>Address</th>
           <th>Email</th>
+          <th>Learner Id Photo</th>
+          <th>Birth Certificate</th>
+          <th>Id Number</th>
       </tr>
 
       {% for row in schoolapptb %}
@@ -64,29 +63,13 @@
           <td>{{row.4}}</td>
           <td>{{row.5}}</td>
           <td>{{row.6}}</td>
+          <td>{{row.7}}</td>
+          <td>{{row.8}}</td>
+          <td>{{row.9}}</td>
       </tr>
       {% endfor %}
   </table>
 
-  
-    <!-- <table>
-      <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Message</th>
-      </tr>
-
-      {% for row in contact_table %}
-      <tr>
-          <td>{{row.0}}</td>
-          <td>{{row.1}}</td>
-          <td>{{row.2}}</td>
-          <td>{{row.3}}</td>
-          <td>{{row.4}}</td>
-      </tr>
-      {% endfor %}
-  </table> -->
   </div>
 </div>
 

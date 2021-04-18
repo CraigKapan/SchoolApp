@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
+from wtforms import StringField, PasswordField, SubmitField, FileField
 
 class AppForm(FlaskForm):
     Name = StringField('Name')
@@ -8,6 +8,9 @@ class AppForm(FlaskForm):
     ParentTel = StringField('ParentTel')
     Address = StringField('Address')
     Email = StringField('Email')
+    Image = FileField('Image')
+    Birth_Certificate = FileField('Birth_Certificate')
+    Id_Number = StringField('Id_Number')
     Submit = SubmitField('Submit')
 
 class ContactForm(FlaskForm):
